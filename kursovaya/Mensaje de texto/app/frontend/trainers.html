@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Тренеры IRON TEMPLE — профессиональная команда сертифицированных специалистов">
+  <meta property="og:title" content="Тренеры — IRON TEMPLE">
+  <title>Тренеры — IRON TEMPLE</title>
+  <link rel="icon" href="https://img.icons8.com/fluency/48/dumbbell.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/adaptive.css">
+  <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader"><div class="preloader__spinner"></div></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">IRON <span>TEMPLE</span></a>
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Главная</a></li>
+            <li><a href="about.html" class="nav__link">О клубе</a></li>
+            <li><a href="prices.html" class="nav__link">Абонементы</a></li>
+            <li><a href="trainers.html" class="nav__link active">Тренеры</a></li>
+            <li><a href="gallery.html" class="nav__link">Галерея</a></li>
+            <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему"><i class="fas fa-moon"></i></button>
+          <div class="burger" id="burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-transition">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header__title" data-animate="fade-up">Наши тренеры</h1>
+        <p class="page-header__breadcrumb" data-animate="fade-up" data-delay="200">
+          <a href="index.html">Главная</a> / <span>Тренеры</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Trainers -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <p class="section__subtitle">Команда</p>
+          <h2 class="section__title">Профессионалы своего дела</h2>
+          <p class="section__text">Каждый тренер — сертифицированный специалист с многолетним опытом</p>
+        </div>
+
+        <!-- Filter -->
+        <div class="filter-buttons" data-animate="fade-up">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="strength">Силовые</button>
+          <button class="filter-btn" data-filter="cardio">Кардио</button>
+          <button class="filter-btn" data-filter="crossfit">Кроссфит</button>
+          <button class="filter-btn" data-filter="yoga">Йога</button>
+          <button class="filter-btn" data-filter="group">Групповые</button>
+        </div>
+
+        <div class="trainers__grid" id="trainersGrid">
+          <!-- Trainer 1 -->
+          <div class="glass-card trainer-card" data-animate="fade-up" data-delay="100" data-category="strength">
+            <img src="https://picsum.photos/400/300?random=30" alt="Алексей Громов" class="trainer-card__img" loading="lazy">
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__name">Алексей Громов</h3>
+              <p class="trainer-card__spec">Силовые тренировки</p>
+              <p class="trainer-card__text">Мастер спорта по пауэрлифтингу. 12 лет тренерского опыта. Специализация: набор мышечной массы, силовая подготовка.</p>
+            </div>
+          </div>
+          <!-- Trainer 2 -->
+          <div class="glass-card trainer-card" data-animate="fade-up" data-delay="200" data-category="crossfit">
+            <img src="https://picsum.photos/400/300?random=31" alt="Марина Волкова" class="trainer-card__img" loading="lazy">
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__name">Марина Волкова</h3>
+              <p class="trainer-card__spec">Кроссфит</p>
+              <p class="trainer-card__text">Сертифицированный CrossFit Level 2 тренер. 8 лет опыта. Участница международных соревнований.</p>
+            </div>
+          </div>
+          <!-- Trainer 3 -->
+          <div class="glass-card trainer-card" data-animate="fade-up" data-delay="300" data-category="yoga">
+            <img src="https://picsum.photos/400/300?random=32" alt="Елена Тихонова" class="trainer-card__img" loading="lazy">
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__name">Елена Тихонова</h3>
+              <p class="trainer-card__spec">Йога</p>
+              <p class="trainer-card__text">Сертифицированный инструктор RYT-500. 10 лет практики. Направления: хатха, виньяса, кундалини.</p>
+            </div>
+          </div>
+          <!-- Trainer 4 -->
+          <div class="glass-card trainer-card" data-animate="fade-up" data-delay="100" data-category="cardio">
+            <img src="https://picsum.photos/400/300?random=33" alt="Дмитрий Соколов" class="trainer-card__img" loading="lazy">
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__name">Дмитрий Соколов</h3>
+              <p class="trainer-card__spec">Кардио и выносливость</p>
+              <p class="trainer-card__text">КМС по лёгкой атлетике. 7 лет опыта. Специализация: жиросжигание, подготовка к марафонам.</p>
+            </div>
+          </div>
+          <!-- Trainer 5 -->
+          <div class="glass-card trainer-card" data-animate="fade-up" data-delay="200" data-category="group">
+            <img src="https://picsum.photos/400/300?random=34" alt="Анна Кузнецова" class="trainer-card__img" loading="lazy">
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__name">Анна Кузнецова</h3>
+              <p class="trainer-card__spec">Групповые программы</p>
+              <p class="trainer-card__text">Сертификат FISAF. 9 лет опыта. Ведёт аэробику, степ, пилатес, танцевальный фитнес.</p>
+            </div>
+          </div>
+          <!-- Trainer 6 -->
+          <div class="glass-card trainer-card" data-animate="fade-up" data-delay="300" data-category="strength">
+            <img src="https://picsum.photos/400/300?random=35" alt="Игорь Медведев" class="trainer-card__img" loading="lazy">
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__name">Игорь Медведев</h3>
+              <p class="trainer-card__spec">Бодибилдинг</p>
+              <p class="trainer-card__text">Чемпион России по бодибилдингу. 15 лет опыта. Подготовка к соревнованиям, сушка, массонабор.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer__logo">IRON <span>TEMPLE</span></div>
+          <p class="footer__desc">Премиальный фитнес-клуб нового поколения.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer__social-link" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="footer__social-link" aria-label="VK"><i class="fab fa-vk"></i></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О клубе</a></li>
+            <li><a href="prices.html">Абонементы</a></li>
+            <li><a href="trainers.html">Тренеры</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Услуги</h4>
+          <ul class="footer__links">
+            <li><a href="#">Тренажёрный зал</a></li>
+            <li><a href="#">Кроссфит</a></li>
+            <li><a href="#">Йога</a></li>
+            <li><a href="#">Групповые</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Контакты</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+79001234567"><i class="fas fa-phone"></i> +7 (900) 123-45-67</a></li>
+            <li><a href="mailto:info@irontemple.ru"><i class="fas fa-envelope"></i> info@irontemple.ru</a></li>
+            <li><a href="contacts.html"><i class="fas fa-map-marker-alt"></i> г. Москва</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 IRON TEMPLE. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="./js/storage.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
