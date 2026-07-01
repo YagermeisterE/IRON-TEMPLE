@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="О фитнес-клубе IRON TEMPLE — наша история, преимущества и философия">
+  <meta property="og:title" content="О клубе — IRON TEMPLE">
+  <title>О клубе — IRON TEMPLE</title>
+  <link rel="icon" href="https://img.icons8.com/fluency/48/dumbbell.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/adaptive.css">
+  <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body>
+  
+  <div class="preloader" id="preloader">
+    <div class="preloader__spinner"></div>
+  </div>
+
+  
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">IRON <span>TEMPLE</span></a>
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Главная</a></li>
+            <li><a href="about.html" class="nav__link active">О клубе</a></li>
+            <li><a href="prices.html" class="nav__link">Абонементы</a></li>
+            <li><a href="trainers.html" class="nav__link">Тренеры</a></li>
+            <li><a href="gallery.html" class="nav__link">Галерея</a></li>
+            <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="burger" id="burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-transition">
+    
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header__title" data-animate="fade-up">О клубе</h1>
+        <p class="page-header__breadcrumb" data-animate="fade-up" data-delay="200">
+          <a href="index.html">Главная</a> / <span>О клубе</span>
+        </p>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="container">
+        <div class="about__content">
+          <div class="about__img" data-animate="fade-right">
+            <img src="image/o-klube.jpg" alt="Интерьер IRON TEMPLE" loading="lazy">
+          </div>
+          <div data-animate="fade-left">
+            <p class="section__subtitle">Наша история</p>
+            <h2 class="section__title" style="text-align:left;">Больше чем просто зал</h2>
+            <p style="color:var(--color-light-gray);margin-bottom:16px;">IRON TEMPLE был основан в 2018 году группой профессиональных спортсменов, которые мечтали создать пространство, где каждый сможет раскрыть свой потенциал.</p>
+            <p style="color:var(--color-light-gray);margin-bottom:16px;">За 8 лет работы мы выросли из небольшого зала в премиальный фитнес-клуб с площадью более 3000 м², современным оборудованием и командой из 15 сертифицированных тренеров.</p>
+            <p style="color:var(--color-light-gray);">Наша миссия — помочь каждому клиенту достичь своих целей, будь то похудение, набор мышечной массы, улучшение здоровья или подготовка к соревнованиям.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" style="background:var(--color-graphite);">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <p class="section__subtitle">Преимущества</p>
+          <h2 class="section__title">Почему именно мы</h2>
+        </div>
+        <div class="advantages__grid">
+          <div class="glass-card advantage-card" data-animate="fade-up" data-delay="100">
+            <div class="advantage-card__icon"><i class="fas fa-medal"></i></div>
+            <h3 class="advantage-card__title">Премиум оборудование</h3>
+            <p class="advantage-card__text">Только лучшие тренажёры от мировых брендов: Hammer Strength, Life Fitness, Technogym.</p>
+          </div>
+          <div class="glass-card advantage-card" data-animate="fade-up" data-delay="200">
+            <div class="advantage-card__icon"><i class="fas fa-user-graduate"></i></div>
+            <h3 class="advantage-card__title">Профессионалы</h3>
+            <p class="advantage-card__text">Все тренеры имеют высшее спортивное образование и международные сертификаты.</p>
+          </div>
+          <div class="glass-card advantage-card" data-animate="fade-up" data-delay="300">
+            <div class="advantage-card__icon"><i class="fas fa-clock"></i></div>
+            <h3 class="advantage-card__title">Удобный график</h3>
+            <p class="advantage-card__text">Работаем с 6:00 до 23:00 без выходных. Тренируйтесь когда удобно.</p>
+          </div>
+          <div class="glass-card advantage-card" data-animate="fade-up" data-delay="400">
+            <div class="advantage-card__icon"><i class="fas fa-shower"></i></div>
+            <h3 class="advantage-card__title">Комфорт</h3>
+            <p class="advantage-card__text">Просторные раздевалки, сауна, душевые, зона отдыха и фитнес-бар.</p>
+          </div>
+          <div class="glass-card advantage-card" data-animate="fade-up" data-delay="500">
+            <div class="advantage-card__icon"><i class="fas fa-chart-line"></i></div>
+            <h3 class="advantage-card__title">Результат</h3>
+            <p class="advantage-card__text">95% наших клиентов достигают поставленных целей в первые 3 месяца тренировок.</p>
+          </div>
+          <div class="glass-card advantage-card" data-animate="fade-up" data-delay="600">
+            <div class="advantage-card__icon"><i class="fas fa-hand-holding-heart"></i></div>
+            <h3 class="advantage-card__title">Индивидуальный подход</h3>
+            <p class="advantage-card__text">Программы тренировок и питания, адаптированные под ваши цели и возможности.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item" data-animate="fade-up" data-delay="100">
+            <div class="stats__item-number" data-count="3000">0</div>
+            <div class="stats__item-label">м² площадь</div>
+          </div>
+          <div class="stats__item" data-animate="fade-up" data-delay="200">
+            <div class="stats__item-number" data-count="200">0</div>
+            <div class="stats__item-label">Тренажёров</div>
+          </div>
+          <div class="stats__item" data-animate="fade-up" data-delay="300">
+            <div class="stats__item-number" data-count="15">0</div>
+            <div class="stats__item-label">Тренеров</div>
+          </div>
+          <div class="stats__item" data-animate="fade-up" data-delay="400">
+            <div class="stats__item-number" data-count="2500">0</div>
+            <div class="stats__item-label">Клиентов</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer__logo">IRON <span>TEMPLE</span></div>
+          <p class="footer__desc">Премиальный фитнес-клуб нового поколения.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/irontemple" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/iron_temple" class="footer__social-link" aria-label="Telegram" target="_blank" rel="noopener"><i class="fab fa-telegram"></i></a>
+            <a href="https://vk.com/club239941038" class="footer__social-link" aria-label="VK" target="_blank" rel="noopener"><i class="fab fa-vk"></i></a>
+            <a href="https://youtube.com/@irontemple" class="footer__social-link" aria-label="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О клубе</a></li>
+            <li><a href="prices.html">Абонементы</a></li>
+            <li><a href="trainers.html">Тренеры</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Услуги</h4>
+          <ul class="footer__links">
+            <li><a href="#">Тренажёрный зал</a></li>
+            <li><a href="#">Кроссфит</a></li>
+            <li><a href="#">Йога</a></li>
+            <li><a href="#">Групповые</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Контакты</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+79001234567"><i class="fas fa-phone"></i> +7 (900) 123-45-67</a></li>
+            <li><a href="mailto:info@irontemple.ru"><i class="fas fa-envelope"></i> info@irontemple.ru</a></li>
+            <li><a href="contacts.html"><i class="fas fa-map-marker-alt"></i> г. Москва</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 IRON TEMPLE. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх"><i class="fas fa-arrow-up"></i></button>
+
+  
+  <script src="./js/storage.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

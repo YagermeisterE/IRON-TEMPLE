@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRON TEMPLE — Премиальный фитнес-клуб</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/adaptive.css">
+  <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body>
+  
+  <div class="preloader" id="preloader">
+    <div class="preloader__spinner"></div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">IRON <span>TEMPLE</span></a>
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link active">Главная</a></li>
+            <li><a href="about.html" class="nav__link">О клубе</a></li>
+            <li><a href="prices.html" class="nav__link">Абонементы</a></li>
+            <li><a href="trainers.html" class="nav__link">Тренеры</a></li>
+            <li><a href="gallery.html" class="nav__link">Галерея</a></li>
+            <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="burger" id="burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-transition">
+    
+    <section class="hero" id="hero">
+      <img src="image/zal-glavnaya.jpg" alt="Фитнес-клуб IRON TEMPLE" class="hero__bg" loading="eager">
+      <div class="hero__overlay"></div>
+      <div class="container">
+        <div class="hero__content" data-animate="fade-up">
+          <p class="hero__subtitle">Добро пожаловать в</p>
+          <h1 class="hero__title">IRON <span>TEMPLE</span></h1>
+          <p class="hero__text">Премиальный фитнес-клуб нового поколения. Современные тренажёры, лучшие тренеры и атмосфера, которая мотивирует на результат.</p>
+          <a href="#signup-modal" class="btn btn--primary" id="heroSignupBtn">
+            <i class="fas fa-dumbbell"></i> Записаться
+          </a>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item" data-animate="fade-up" data-delay="100">
+            <div class="stats__item-number" data-count="2500">0</div>
+            <div class="stats__item-label">Клиентов</div>
+          </div>
+          <div class="stats__item" data-animate="fade-up" data-delay="200">
+            <div class="stats__item-number" data-count="15">0</div>
+            <div class="stats__item-label">Тренеров</div>
+          </div>
+          <div class="stats__item" data-animate="fade-up" data-delay="300">
+            <div class="stats__item-number" data-count="8">0</div>
+            <div class="stats__item-label">Лет опыта</div>
+          </div>
+          <div class="stats__item" data-animate="fade-up" data-delay="400">
+            <div class="stats__item-number" data-count="50">0</div>
+            <div class="stats__item-label">Программ</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <p class="section__subtitle">Что мы предлагаем</p>
+          <h2 class="section__title">Наши услуги</h2>
+          <p class="section__text">Широкий спектр тренировок для любого уровня подготовки</p>
+        </div>
+        
+        <div class="search-box" data-animate="fade-up">
+          <input type="text" class="search-box__input" id="serviceSearch" placeholder="Поиск услуг...">
+          <button class="search-box__btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="services__grid" id="servicesGrid">
+          <div class="glass-card service-card" data-animate="fade-up" data-delay="100" data-category="strength">
+            <div class="service-card__icon"><i class="fas fa-dumbbell"></i></div>
+            <h3 class="service-card__title">Тренажёрный зал</h3>
+            <p class="service-card__text">Более 200 современных тренажёров от ведущих мировых производителей для эффективных силовых тренировок.</p>
+          </div>
+          <div class="glass-card service-card" data-animate="fade-up" data-delay="200" data-category="personal">
+            <div class="service-card__icon"><i class="fas fa-user-tie"></i></div>
+            <h3 class="service-card__title">Персональный тренер</h3>
+            <p class="service-card__text">Индивидуальные программы тренировок с сертифицированными тренерами для максимального результата.</p>
+          </div>
+          <div class="glass-card service-card" data-animate="fade-up" data-delay="300" data-category="cardio">
+            <div class="service-card__icon"><i class="fas fa-heartbeat"></i></div>
+            <h3 class="service-card__title">Кардио зона</h3>
+            <p class="service-card__text">Беговые дорожки, велотренажёры, эллипсоиды — всё для эффективных кардио тренировок.</p>
+          </div>
+          <div class="glass-card service-card" data-animate="fade-up" data-delay="400" data-category="crossfit">
+            <div class="service-card__icon"><i class="fas fa-fire"></i></div>
+            <h3 class="service-card__title">Кроссфит</h3>
+            <p class="service-card__text">Функциональные тренировки высокой интенсивности для развития силы, выносливости и скорости.</p>
+          </div>
+          <div class="glass-card service-card" data-animate="fade-up" data-delay="500" data-category="group">
+            <div class="service-card__icon"><i class="fas fa-users"></i></div>
+            <h3 class="service-card__title">Групповые занятия</h3>
+            <p class="service-card__text">Аэробика, танцы, пилатес, степ и другие групповые программы в дружественной атмосфере.</p>
+          </div>
+          <div class="glass-card service-card" data-animate="fade-up" data-delay="600" data-category="yoga">
+            <div class="service-card__icon"><i class="fas fa-spa"></i></div>
+            <h3 class="service-card__title">Йога</h3>
+            <p class="service-card__text">Различные направления йоги для гармонии тела и духа: хатха, виньяса, кундалини.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <p class="section__subtitle">Отзывы</p>
+          <h2 class="section__title">Что говорят клиенты</h2>
+        </div>
+        <div class="swiper testimonials-slider" data-animate="fade-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="https://picsum.photos/100/100?random=10" alt="Клиент" class="testimonial-card__avatar" loading="lazy">
+                <p class="testimonial-card__text">"Лучший фитнес-клуб в городе! Атмосфера, тренеры, оборудование — всё на высшем уровне. За 6 месяцев достиг результатов, о которых мечтал годами."</p>
+                <h4 class="testimonial-card__name">Александр Петров</h4>
+                <p class="testimonial-card__role">Клиент 2 года</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="https://picsum.photos/100/100?random=11" alt="Клиент" class="testimonial-card__avatar" loading="lazy">
+                <p class="testimonial-card__text">"Персональный тренер помог мне полностью изменить подход к тренировкам. Теперь каждое занятие приносит удовольствие и результат."</p>
+                <h4 class="testimonial-card__name">Мария Иванова</h4>
+                <p class="testimonial-card__role">Клиент 1 год</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="https://picsum.photos/100/100?random=12" alt="Клиент" class="testimonial-card__avatar" loading="lazy">
+                <p class="testimonial-card__text">"Групповые занятия — это нечто! Энергия, мотивация и отличная компания. Хожу на кроссфит и йогу уже полтора года."</p>
+                <h4 class="testimonial-card__name">Дмитрий Козлов</h4>
+                <p class="testimonial-card__role">Клиент 1.5 года</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="https://picsum.photos/100/100?random=13" alt="Клиент" class="testimonial-card__avatar" loading="lazy">
+                <p class="testimonial-card__text">"Чистота, порядок, современное оборудование. Всегда свободные тренажёры даже в час пик. Рекомендую всем!"</p>
+                <h4 class="testimonial-card__name">Елена Смирнова</h4>
+                <p class="testimonial-card__role">Клиент 3 года</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="https://picsum.photos/100/100?random=14" alt="Клиент" class="testimonial-card__avatar" loading="lazy">
+                <p class="testimonial-card__text">"Начинал с нуля, а сейчас участвую в соревнованиях. Всё благодаря профессиональным тренерам IRON TEMPLE."</p>
+                <h4 class="testimonial-card__name">Игорь Волков</h4>
+                <p class="testimonial-card__role">Клиент 2.5 года</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="https://picsum.photos/100/100?random=15" alt="Клиент" class="testimonial-card__avatar" loading="lazy">
+                <p class="testimonial-card__text">"Йога в IRON TEMPLE — это особенный опыт. Прекрасные залы, опытные инструкторы и невероятная атмосфера спокойствия."</p>
+                <h4 class="testimonial-card__name">Анна Белова</h4>
+                <p class="testimonial-card__role">Клиент 1 год</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <p class="section__subtitle">Вопросы и ответы</p>
+          <h2 class="section__title">FAQ</h2>
+        </div>
+        <div class="faq__list" data-animate="fade-up">
+          <div class="faq__item">
+            <button class="faq__question">Какой график работы клуба? <i class="fas fa-chevron-down"></i></button>
+            <div class="faq__answer"><p>Клуб работает ежедневно с 6:00 до 23:00. В праздничные дни график может меняться — следите за обновлениями в наших социальных сетях.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">Нужна ли медицинская справка? <i class="fas fa-chevron-down"></i></button>
+            <div class="faq__answer"><p>Для посещения тренажёрного зала медицинская справка не требуется. Однако мы рекомендуем проконсультироваться с врачом перед началом интенсивных тренировок.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">Можно ли заморозить абонемент? <i class="fas fa-chevron-down"></i></button>
+            <div class="faq__answer"><p>Да, вы можете заморозить абонемент на срок до 30 дней. Для этого обратитесь на ресепшн или позвоните нам.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">Есть ли пробное занятие? <i class="fas fa-chevron-down"></i></button>
+            <div class="faq__answer"><p>Да! Первое пробное занятие бесплатно. Вы можете записаться через форму на сайте или по телефону.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">Какое оборудование в зале? <i class="fas fa-chevron-down"></i></button>
+            <div class="faq__answer"><p>В нашем зале более 200 единиц оборудования от Hammer Strength, Life Fitness, Technogym. Свободные веса, тренажёры, кардио зона.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">Есть ли парковка? <i class="fas fa-chevron-down"></i></button>
+            <div class="faq__answer"><p>Да, для наших клиентов предусмотрена бесплатная парковка на 50 мест рядом со зданием клуба.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">Можно ли привести друга? <i class="fas fa-chevron-down"></i></button>
+            <div class="faq__answer"><p>Конечно! Владельцы абонементов Premium и VIP могут приводить гостей бесплатно. Для остальных — гостевой визит за 500₽.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">Есть ли детская комната? <i class="fas fa-chevron-down"></i></button>
+            <div class="faq__answer"><p>Да, у нас есть детская комната для детей от 3 до 10 лет. Работает ежедневно с 9:00 до 21:00 под присмотром воспитателей.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer__logo">IRON <span>TEMPLE</span></div>
+          <p class="footer__desc">Премиальный фитнес-клуб нового поколения. Мы помогаем людям становиться лучшей версией себя.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/irontemple" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/iron_temple" class="footer__social-link" aria-label="Telegram" target="_blank" rel="noopener"><i class="fab fa-telegram"></i></a>
+            <a href="https://vk.com/club239941038" class="footer__social-link" aria-label="VK" target="_blank" rel="noopener"><i class="fab fa-vk"></i></a>
+            <a href="https://youtube.com/@irontemple" class="footer__social-link" aria-label="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О клубе</a></li>
+            <li><a href="prices.html">Абонементы</a></li>
+            <li><a href="trainers.html">Тренеры</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Услуги</h4>
+          <ul class="footer__links">
+            <li><a href="#">Тренажёрный зал</a></li>
+            <li><a href="#">Кроссфит</a></li>
+            <li><a href="#">Йога</a></li>
+            <li><a href="#">Групповые</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Контакты</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+79001234567"><i class="fas fa-phone"></i> +7 (900) 123-45-67</a></li>
+            <li><a href="mailto:info@irontemple.ru"><i class="fas fa-envelope"></i> info@irontemple.ru</a></li>
+            <li><a href="contacts.html"><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Спортивная, 15</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 IRON TEMPLE. Все права защищены. | <a href="admin.html" style="color:var(--color-light-gray);">Панель администратора</a></p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  
+  <div class="modal" id="signupModal">
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose"><i class="fas fa-times"></i></button>
+      <h3 class="modal__title">Записаться на тренировку</h3>
+      <form id="signupForm">
+        <div class="form__group">
+          <label class="form__label" for="formName">Имя *</label>
+          <input type="text" class="form__input" id="formName" placeholder="Ваше имя" required>
+          <span class="form__error" id="nameError">Введите ваше имя</span>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="formPhone">Телефон *</label>
+          <input type="tel" class="form__input" id="formPhone" placeholder="+7 (___) ___-__-__" required>
+          <span class="form__error" id="phoneError">Введите корректный телефон</span>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="formEmail">Email *</label>
+          <input type="email" class="form__input" id="formEmail" placeholder="your@email.com" required>
+          <span class="form__error" id="emailError">Введите корректный email</span>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="formPlan">Тариф</label>
+          <select class="form__select" id="formPlan">
+            <option value="start">Start</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+            <option value="vip">VIP</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="formDate">Дата</label>
+          <input type="date" class="form__input" id="formDate">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="formComment">Комментарий</label>
+          <textarea class="form__textarea" id="formComment" placeholder="Ваш комментарий..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">
+          <i class="fas fa-paper-plane"></i> Отправить заявку
+        </button>
+      </form>
+    </div>
+  </div>
+
+  
+  <div class="toast" id="toast">
+    <i class="toast__icon fas fa-check-circle"></i>
+    <span class="toast__message">Заявка успешно отправлена!</span>
+  </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="https://img.icons8.com/fluency/48/dumbbell.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/email.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
